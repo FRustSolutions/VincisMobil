@@ -1,0 +1,13 @@
+
+Responsive Nav Bar
+Corona Info Detail schöneres Popup
+
+Responsive Layout media querys for ipads and desktop
+Include Images from food
+
+
+Form functionality
+
+Check Rights to every image & icon
+Check browser compatibility
+Read old Datenschutz & Impressum

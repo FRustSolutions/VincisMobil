@@ -1,0 +1,22 @@
+Web design from scratch: vanilla HTML, CSS & JS
+
+Pros:
+-> very lightweight website, no unneccessary bloating through frameworks and libraries
+(like wordpress, bootstrap...)   -> better performance 
+-> better reliability, no dependencies (e.g bugs in modules/updates etc.)
+-> easier deployment, no CMS for WP etc.
+-> better security without unneccessary addons
+-> easier custom features & updates
+
+Cons:
+-> a lot more work: everything is custom code
+-> WP, CMS easier for customer to understand
+
+Argument for simple websites, not for highly complex web applications
+
+How to get started:
+- Mobile first, media queries for table, desktop later
+- have divs and sub-divs for everything, with proper class names!
+- separate every section properly
+
+icons from https://iconmonstr.com/
