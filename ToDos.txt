@@ -1,5 +1,5 @@
 
-Responsive Nav Bar
+Responsive Nav Bar - Sticky 
 Corona Info Detail schöneres Popup
 
 Responsive Layout media querys for ipads and desktop
@@ -8,6 +8,6 @@ Include Images from food
 
 Form functionality
 
-Check Rights to every image & icon
+Check Rights to every image (icons are custom made)
 Check browser compatibility
 Read old Datenschutz & Impressum
