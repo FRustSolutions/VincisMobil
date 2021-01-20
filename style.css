@@ -24,6 +24,7 @@ body{
     width: 90%;
     padding: 15px 0;
     padding-left: 30%;
+    animation: fadeIn 1.5s ease-in;
 }
 
 /* Navigation: */
@@ -56,7 +57,8 @@ body{
 /* Section 1: Main image: */
 .imginside{
     width: 100%;
-    min-height: 200px;
+    min-height: 150px;
+    /* box-sizing: border-box; */
 }
 
 /* Section 2: Anrede */
@@ -132,7 +134,7 @@ body{
 /* Section 5: Reservierung */
 
 .contact{
-    margin-top:50px;
+    /* margin-top:50px; */
     width: 100%;
     background: url(Images/brownwood.jpg);
     background-size:cover;
@@ -143,7 +145,7 @@ body{
 
 .contactbox{
     padding: 50px 0px;
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
@@ -154,7 +156,7 @@ body{
 }
 
 .contactForm{
-    padding: 15px 30px;
+    padding: 20px 20px 20px 10px;
     background:rgb(247, 245, 245);
     /* box-shadow: 0 15px 50px rgba(0,0,0,0.1); */
     text-align: center;
@@ -232,7 +234,6 @@ body{
 
 
 
-
 /* Section 6: Footer */
 
 .footerinfo{
@@ -257,10 +258,20 @@ body{
     padding-bottom: 8px;
 }
 
+.footerinfo a{
+    text-decoration: none;
+    color: black;
+}
+
+.footerinfo a:hover{
+    font-weight: 1000;
+}
+
 .footkontakt{
     padding-bottom: 20px;
     border-bottom: 1px solid lightgrey;
 }
+
 
 .footzeiten{
     padding-bottom: 20px;
@@ -269,4 +280,125 @@ body{
 
 
 
-/* Responsive Navbar Menu: */
+/* Animations  */
+
+@keyframes slideDown{
+    0%{
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+}
+
+@keyframes slideRight{
+    0%{
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(30px);
+        opacity: 0.2;
+    }
+}
+
+@keyframes slideLeft{
+    0%{
+        transform: translateX(300px);
+        /* opacity: 0; */
+    }
+    50%{
+        transform: translateX(-30px);
+        /* opacity: 0.5; */
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    /* 100% {
+        opcity:1;
+    } */
+}
+
+
+
+
+/* Responsive Navbar Menu for really small screens: */
+@media (max-width: 350px){
+
+    .nav-link{
+        font-size:16px;
+    }
+}
+
+
+/* Responsiveness for bigger screens: flexbox rows */
+/* 500px and above:  */
+@media (min-width: 500px){
+    /* Header */
+    header{
+        background-color: white;
+        /* background-color: black; */
+        position: fixed;
+        /* top: 0; */
+        z-index: 9999;
+        /* display: flex; */
+        /* height: 10vh; */
+        width: 100%;
+        margin:auto;
+        align-items: center;
+    }
+
+    .headercontent{
+        display: flex;
+        width: 100%;
+        margin:auto;
+        align-items: center;
+    }
+
+    .logo-container{
+        flex: 1
+    }
+    nav{
+        flex: 2
+    }
+    
+    .nav-links{
+        padding-top: 30px;
+        padding-left: 10%;
+    }
+    
+
+    /* Speisen und Wein */
+    .speisen{
+        display: flex;
+        /* margin:auto; */
+        align-items: center;
+    }
+
+    .imgspeisen{
+        padding-left: 2%;
+        width: 40%;
+    }
+
+    .wein{
+        display: flex;
+        flex-direction: row-reverse;
+        /* margin:auto; */
+        align-items: center;
+    }
+
+    .imgwein{
+        padding-right: 2%;
+        width: 40%;
+    }
+
+
+    /* Form */
+    
+    .contactbox{
+        padding: 50px 0px;
+        width: 400px;
+        margin: auto;
+    }
+}
