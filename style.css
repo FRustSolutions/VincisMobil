@@ -68,7 +68,13 @@ body{
 }
 
 .lokal{
-    padding-bottom: 20px;
+    padding: 10px 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.zeiten{
+    padding: 30px 10px;
 }
 
 .bigletter{
@@ -237,6 +243,7 @@ body{
 /* Section 6: Footer */
 
 .footerinfo{
+    font-size: 16px;
     padding: 50px 20px;
     text-align: center;
     text-transform: uppercase;
@@ -331,7 +338,7 @@ body{
     }
 }
 
-
+/* Mobile first approach */
 /* Responsiveness for bigger screens: flexbox rows */
 /* 500px and above:  */
 @media (min-width: 500px){
@@ -368,6 +375,31 @@ body{
         padding-left: 10%;
     }
     
+
+    .imginside{
+        padding-top: 80px;
+    }
+
+    /* Anrede */
+    .anrede{
+        padding: 30px 20px;;
+        text-align: center;
+        display:flex;
+    }
+    
+    .lokal{
+        padding: 10px 50px;
+        border-bottom: 0;
+        flex: 4;
+    }
+    
+    .zeiten{
+        padding: 20px 0px;
+        flex: 2;
+        border-left: black solid 1px; 
+        /* border-right: black solid 1px; */
+    }
+
 
     /* Speisen und Wein */
     .speisen{

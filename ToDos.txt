@@ -1,4 +1,5 @@
 
+
 Responsive Nav Bar - Sticky 
 Corona Info Detail schöneres Popup
 
@@ -8,6 +9,6 @@ Include Images from food
 
 Form functionality
 
-Check Rights to every image (icons are custom made)
+Check Rights to every image (icons are custom made, images from old website)
 Check browser compatibility
 Read old Datenschutz & Impressum
