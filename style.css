@@ -54,12 +54,25 @@ body{
 }
 
 
+.insideimg{
+    /* padding-top: 150px; */
+    width:100%;
+    min-height: 35vw;
+    /* min-height: 200px; */
+    max-height:700px;
+    background-image: url("Images/Inside.png");
+    background-size: contain;
+    /* background-attachment: fixed; */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
 /* Section 1: Main image: */
-.imginside{
+/* .imginside{
     width: 100%;
     min-height: 150px;
-    /* box-sizing: border-box; */
-}
+} */
 
 /* Section 2: Anrede */
 .anrede{
@@ -210,6 +223,9 @@ body{
     cursor: pointer;
 }
 
+.meldung{
+    display:none;
+}
 
 
 /* Section 5: kontakt */
@@ -353,7 +369,7 @@ body{
 /* Mobile first approach */
 /* Responsiveness for bigger screens: flexbox rows */
 /* 500px and above:  */
-@media (min-width: 500px){
+@media (min-width: 800px){
     /* Header */
     header{
         background-color: white;
@@ -391,6 +407,17 @@ body{
     .imginside{
         padding-top: 80px;
     }
+
+
+    .insideimg{
+        min-height: 40vw;
+        background-size: contain;
+        background-attachment: fixed;
+        background-position: 0px 100px;
+        background-repeat: no-repeat;
+        /* background-size: cover;  */
+    }
+
 
     /* Anrede */
     .anrede{
@@ -444,13 +471,36 @@ body{
     /* Form */
     
     .contactbox{
-        padding: 50px 0px;
-        width: 400px;
-        margin: auto;
+        padding: 50px 50px;
+        padding-top: 80px;
+        flex: 3;
+        /* width: 800px; */
+        /* margin: auto; */
     }
 
+    .contact{
+        margin:auto;
+        display: flex;
+    }
+
+    .meldung{
+        display:block;
+        border: 1px white solid;
+        background-color: white;
+        /* padding-right: 500px; */
+        /* max-height: 500px; */
+        margin: auto;
+        margin-right: 50px;
+        flex: 2;
+    }
+
+    .meldung p{
+        /* color:white; */
+        font-size: 15px;
+    }
 
     .footer1{
+        padding-top: 40px;
         display:flex;
     }
 
